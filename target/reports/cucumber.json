@@ -1,0 +1,114 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-15T20:09:08.635Z",
+        "line": 6,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "techfios-billing-login-page-functionality-validation;user-should-be-able-to-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2148243000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "steps.LoginStepDefination.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 106026600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@techfios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefination.User_enters_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61115000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefination.user_enters_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1051393500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefination.user_clicks_on_log_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003cDashboard- iBilling\u003e but was:\u003cnull\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat steps.LoginStepDefination.user_should_land_on_dashboard_page(LoginStepDefination.java:45)\r\n\tat ✽.User should land on dashboard page(classpath:features/TechfiosLogin.feature:11)\r\n",
+              "duration": 2580200,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefination.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios billing login page functionality validation",
+    "description": "",
+    "id": "techfios-billing-login-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/TechfiosLogin.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
